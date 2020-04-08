@@ -15,7 +15,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src\\test\\java\\com\\automation\\feature\\Automation.feature",
 				glue = "com\\automation\\stepdefinition",
-				plugin= {"pretty","html:Report","com.cucumber.listener.ExtentCucumberFormatter:Report\\extentReport.html","rerun:Report/return.txt"},
+				plugin= {"pretty","html:Report","com.cucumber.listener.ExtentCucumberFormatter:Report\\extentReport.html","rerun:Report/rerun.txt"},
 				monochrome = true, 
 				dryRun = false, 
 				strict = true)
